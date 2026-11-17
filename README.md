@@ -126,7 +126,7 @@ As the analyst on this project, the focus was on three areas — **market struct
 
 ## 🛠 Tools Used
 
-- **Python** — data cleaning and preparation (including GeoPandas for neighbourhood identification)
+- **Python** — data cleaning and preparation
 - **Power BI** — interactive three-page dashboard
 - **Excel** — dataset viewing
 
