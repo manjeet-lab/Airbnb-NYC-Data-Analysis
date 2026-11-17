@@ -1,151 +1,143 @@
 # Airbnb NYC Data Analysis | Market, Pricing, Host & Availability Insights
 
-**Python · Power BI · Excel (dataset viewing only)**
+**Python · Power BI · Excel**
 
 ---
 
 ## Executive Snapshot (3-Minute Read)
 
-**Business Context:** Airbnb's NYC market is large (102K listings) and spread across five boroughs, hundreds of neighbourhoods and four room types. This project analyses the listing data to understand **where supply is concentrated, how listings are priced, who the hosts are, and how availability differs across room types.**
+**Business Context:** Airbnb's NYC market is large (102K listings) and spread across five boroughs, hundreds of neighbourhoods and four room types. This project analyses the listing data to understand where supply is concentrated, how listings are priced, who the hosts are, and how availability differs across room types.
 
 **Approach:** The dataset was cleaned and prepared in Python, and the findings were presented in an interactive three-page Power BI dashboard.
 
-> **Important:** This analysis is based on *listing* data. Price is listing price (not revenue), availability is open days (not occupancy), and number of reviews is not bookings. See [Limitations](#-assumptions--limitations).
+### Dashboard Walkthrough
+
+![Dashboard Overview](images/dashboard1.png)
 
 ---
 
 ## Key Findings
 
-- **Supply is concentrated in two boroughs.** Manhattan (44K, 42.69%) and Brooklyn (42K, 40.8%) hold about **83.5%** of the 102K listings.
-- **Brooklyn has the two largest neighbourhoods.** Bedford-Stuyvesant (7,899) and Williamsburg (7,733) lead, while Manhattan's supply is spread across many neighbourhoods.
-- **Two room types dominate.** Entire Home/Apt (53K) and Private Room (46K) make up roughly **97%** of listings.
-- **Listing prices are almost identical across boroughs.** The average is $625.35, and the spread between boroughs is only about $5–7 (under 1%).
-- **Guests pay about 20% above listing price.** Average total price is $750.39, and the $125.04 gap equals the average service fee.
-- **The host base looks commercially operated.** 13K hosts manage 102K listings (about 8 per host), and the largest host has roughly 870 listings.
-- **Hotel and shared rooms are open for far more days.** Hotel Room averages 220 available days versus 130 for Private Room.
+- **83.5% of listings sit in two boroughs** — Manhattan (44K, 42.69%) and Brooklyn (42K, 40.8%) out of 102K listings
+- **Brooklyn has the two largest neighbourhoods** — Bedford-Stuyvesant (7,899) and Williamsburg (7,733), while Manhattan's supply is spread across many neighbourhoods
+- **Two room types make up ~97% of the market** — Entire Home/Apt (53K) and Private Room (46K)
+- **Listing prices barely change by borough** — average $625.35, with only a ~$5–7 spread (under 1%) between boroughs
+- **Guests pay ~20% above the listing price** — average total price $750.39 vs listing price $625.35, a gap equal to the $125.04 average service fee
+- **The host base looks commercially operated** — 13K hosts manage 102K listings (~8 per host), and the top host has roughly 870 listings
+- **Hotel and shared rooms stay open far longer** — Hotel Room averages 220 available days vs 130 for Private Room
 
-### Why This Matters
-
-The NYC Airbnb market depends on a small number of boroughs, neighbourhoods and large hosts. Price differences between boroughs and between room types are much smaller than expected, and the real cost to guests is about one-fifth higher than the listing price shows.
+**Why This Matters:** The NYC Airbnb market depends on a few boroughs, a few neighbourhoods and a relatively small set of large hosts. Prices are far more uniform than expected across boroughs and room types, and the real cost to guests is about one-fifth higher than the listing price suggests.
 
 ---
 
-## Project Overview
+## 📌 Project Overview
 
-This project analyses the **NYC Airbnb listings dataset** to answer one question:
+This project delivers an end-to-end analysis of the NYC Airbnb listings dataset using Python and Power BI.
 
-> *What does the NYC Airbnb market look like in terms of supply, pricing, hosts and availability, and what can listing data tell us about it?*
+The business question: *"What does the NYC Airbnb market look like in terms of supply, pricing, hosts and availability?"*
 
----
-
-## Dashboard Walkthrough
-
-### Page 1: Overview
-
-![Overview Page](images/dashboard1.png)
+As the analyst on this project, the focus was on three areas — **market structure** (borough, neighbourhood and room type), **pricing** (listing price, service fee and total price) and **hosts & availability** (host concentration, verification, ratings and open days).
 
 ---
 
-### Page 2: NYC Airbnb Market Overview
+## 📊 Executive Summary
+
+### Dashboard Overview — NYC Airbnb Market Overview
 
 ![NYC Airbnb Market Overview](images/dashboard2.png)
 
-**KPIs:** Total Listings 102K · Total Hosts 13K · Avg Listing Price $625.35 · Avg Total Price $750.39
-
 **Supply by Borough**
-- Manhattan 44K (42.69%), Brooklyn 42K (40.8%), Queens 13K (12.93%), Bronx 3K, Staten Island 1K.
-- Manhattan and Brooklyn together are about 83.5% of listings, so changes in demand, regulation or host behaviour there would move the whole market.
+- Total listings: 102K · Total hosts: 13K
+- Manhattan 44K (42.69%) · Brooklyn 42K (40.8%) · Queens 13K (12.93%) · Bronx 3K · Staten Island 1K
+- Manhattan and Brooklyn together hold ~83.5% of listings — changes in demand, regulation or host behaviour there would move the whole market
 
 **Top Neighbourhoods**
-- Bedford-Stuyvesant 7,899 · Williamsburg 7,733 · Harlem 5,441 · Bushwick 4,956 · Hell's Kitchen 3,950.
-- The top 10 neighbourhoods hold **47,566 listings** (about 47% of the market), so supply is geographically concentrated.
-- Manhattan leads at borough level because its supply is spread across many neighbourhoods, while Brooklyn's is concentrated in a few very large ones.
+- Bedford-Stuyvesant 7,899 · Williamsburg 7,733 · Harlem 5,441 · Bushwick 4,956 · Hell's Kitchen 3,950
+- The top 10 neighbourhoods hold 47,566 listings (~47% of the market)
+- Manhattan leads at borough level because its supply is spread across many neighbourhoods; Brooklyn's is concentrated in a few very large ones
 
 **Room Types**
-- Entire Home/Apt 53K (about 52%) and Private Room 46K (about 45%) make up roughly 97% of listings. Shared Room is 2K.
+- Entire Home/Apt 53K (~52%) · Private Room 46K (~45%) · Shared Room 2K
+- Hotel-style and shared stays are marginal in listing supply
 
 **Pricing by Borough**
-- Average listing price ranges only from just under $625 (Manhattan) to about $630 (Queens), a spread of under 1%. Location does not appear to drive listing price in this dataset.
+- Average listing price: $625.35
+- Queens is highest at about $630 and Manhattan lowest at just under $625 — location does not appear to drive listing price in this dataset
 
 ---
 
-### Page 3: Pricing, Host & Availability Insights
+### Pricing, Host & Availability Insights
 
 ![Pricing, Host & Availability Insights](images/dashboard3.png)
 
-**KPIs:** Highest Listing Price $1.2K · Avg Listing Price $625.35 · Avg Service Fee $125.04 · Avg Availability 133 days · Verified Host % 49.80%
-
 **Pricing**
-- Guests pay about 20% above the listing price: total price $750.39 vs listing price $625.35, a gap equal to the $125.04 average service fee.
-- Hotel Room is highest at about $666, Shared Room about $635, and Entire Home/Apt and Private Room about $625 (approximate, read from the chart). Shared rooms are priced above entire homes and private rooms, which does not follow the usual product hierarchy.
+- Highest listing price: $1.2K · Avg listing price: $625.35 · Avg service fee: $125.04
+- Avg total price $750.39 — guests pay ~20% above the listing price
+- Hotel Room is highest at about $666, Shared Room about $635, Entire Home/Apt and Private Room about $625
+- Shared rooms are priced above entire homes and private rooms — listing price does not follow the usual product hierarchy
 
 **Hosts**
-- 13K hosts manage 102K listings (about 8 per host). The top host has roughly 870 listings and the tenth about 400.
-- Company operators such as "Sonder (Nyc)" appear in the top 10, which points to professional, multi-listing supply.
-- Verified Host % is 49.80%, so verification is split almost evenly.
+- 13K hosts manage 102K listings (~8 per host)
+- The top host has roughly 870 listings and the tenth about 400
+- Company operators such as "Sonder (Nyc)" appear in the top 10, pointing to professional, multi-listing supply
+- Verified Host %: 49.80% — verification is split almost evenly
 
 **Availability**
-- Average availability is 133 days (about 36% of the year).
-- Hotel Room 220 days · Shared Room 167 · Entire Home/Apt 134 · Private Room 130.
+- Average availability: 133 days (~36% of the year)
+- Hotel Room 220 days · Shared Room 167 · Entire Home/Apt 134 · Private Room 130
+- Hotel Room availability is ~69% higher than Private Room
 
-**Reviews**
-- Hotel Room has the highest average rating (about 3.5) but is a very small segment.
-- Listings with very high review counts are priced below average (501–1000 review band about $535), which is an association and not a cause.
-
----
-
-## Key Analytical Decisions
-
-- **Missing neighbourhoods:** Some missing neighbourhood values were identified using **GeoPandas** (with ChatGPT's guidance) based on coordinates. These are **estimated values**, not exact matches from the original data.
-- **Imputed coordinates:** Some coordinates were estimated during cleaning.
-- **Business-first framing:** Findings are described as listing-level observations, never as revenue or demand performance.
-
-> Add here: number of rows before and after cleaning, duplicate handling, and any other cleaning steps you applied.
+**Reviews & Ratings**
+- Hotel Room has the highest average rating (~3.5), followed by Entire Home/Apt (~2.8), Private Room (~2.75) and Shared Room (~2.5)
+- Listings with very high review counts are priced below average — the 501–1000 review band averages about $535, roughly 14% below the overall $625.35
 
 ---
 
-## Tools Used
+## 🔍 Insights Deep Dive
 
-- **Python:** data cleaning and preparation (including GeoPandas for neighbourhood identification)
-- **Power BI:** interactive three-page dashboard
-- **Excel:** dataset viewing only
+### Supply
+- The market is effectively a Manhattan-and-Brooklyn market, with Queens adding 12.93%
+- The Bronx and Staten Island together are under 4% of listings
 
----
+### Room Types
+- Entire Home/Apt and Private Room dominate; hotel and shared segments are small
+- Hotel Room leads on price, rating and availability, but it is a very small segment
 
-## ⚠ Assumptions & Limitations
+### Pricing
+- Borough-level and room-type price gaps are small (about $40 at most between room types)
+- The $125.04 service fee adds about one-fifth on top of the listing price
 
-- **Price is listing price,** not revenue. Actual host earnings and Airbnb revenue are not available.
-- **Availability is open days,** not occupancy. A high value does not mean a listing was unbooked.
-- **Number of reviews is not bookings.**
-- **Cancellation policy** does not show actual cancellations.
-- **Top 10 neighbourhood totals** represent only those 10 neighbourhoods.
-- **Some neighbourhood names and coordinates were estimated** or imputed during cleaning. Neighbourhood-level counts could shift if estimated assignments are wrong.
-- **Small segments:** Hotel Room averages may be unstable because very few listings fall in this group.
-- **Host names:** if hosts were grouped by name, common names may combine several people, and "Unknown" is a data-quality gap rather than a real host.
-- Several dashboard charts have truncated axes, so visual gaps look larger than the actual differences.
+### Hosts
+- With ~8 listings per host on average, supply is not mainly individuals renting a spare room
+- Platform health and listing quality depend heavily on a small set of large operators
 
----
-
-## Repository Structure
-
-```
-├── dataset/              # Airbnb NYC dataset
-├── notebooks/            # Python cleaning and analysis notebook
-├── dashboard/            # Power BI file (.pbix)
-├── images/               # Dashboard screenshots (3 images)
-└── README.md
-```
-
-> Update this to match your actual folders.
+### Availability & Reviews
+- Hotel and shared inventory is open for far more days than residential-style listings
+- The most-reviewed listings are not the most expensive
 
 ---
 
-## Contact & Feedback
+## 🧠 Key Analytical Decisions
+
+- **Neighbourhood identification:** Missing neighbourhood values were identified with **GeoPandas** using location coordinates, so some neighbourhood assignments are estimated rather than exact matches
+- **Listing-level view:** All findings describe listing price, available days and review counts — not revenue, occupancy or bookings
+
+---
+
+## 🛠 Tools Used
+
+- **Python** — data cleaning and preparation (including GeoPandas for neighbourhood identification)
+- **Power BI** — interactive three-page dashboard
+- **Excel** — dataset viewing
+
+---
+
+## 📬 Contact and Feedback
 
 This project was developed as part of a portfolio demonstrating data analysis skills across Python and Power BI.
 
-**Data Analyst:** *Your Name*
-**LinkedIn:** *Your LinkedIn link*
-**Email:** *Your email*
+**Data Analyst:** Manjeet Gupta  
+**LinkedIn:** [Manjeet Gupta](https://www.linkedin.com/in/manjeet-gupta-731409296/)  
+**Email:** [manjeet.tcsc@gmail.com](mailto:manjeet.tcsc@gmail.com)
 
-*Data Source: Airbnb NYC listings dataset (add source link) · Tools: Python · Power BI*
+*Data Source: [Airbnb Open Data (Kaggle)](https://www.kaggle.com/datasets/arianazmoudeh/airbnbopendata) · Tools: Python · Power BI*
