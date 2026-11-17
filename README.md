@@ -42,13 +42,13 @@ This project analyses the **NYC Airbnb listings dataset** to answer one question
 
 ### Page 1: Overview
 
-![Overview Page](images/overview.png)
+![Overview Page](images/dashboard1.png)
 
 ---
 
 ### Page 2: NYC Airbnb Market Overview
 
-![NYC Airbnb Market Overview](images/market_overview.png)
+![NYC Airbnb Market Overview](images/dashboard2.png)
 
 **KPIs:** Total Listings 102K · Total Hosts 13K · Avg Listing Price $625.35 · Avg Total Price $750.39
 
@@ -71,7 +71,7 @@ This project analyses the **NYC Airbnb listings dataset** to answer one question
 
 ### Page 3: Pricing, Host & Availability Insights
 
-![Pricing, Host & Availability Insights](images/pricing_host_availability.png)
+![Pricing, Host & Availability Insights](images/dashboard3.png)
 
 **KPIs:** Highest Listing Price $1.2K · Avg Listing Price $625.35 · Avg Service Fee $125.04 · Avg Availability 133 days · Verified Host % 49.80%
 
