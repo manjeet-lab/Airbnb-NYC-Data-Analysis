@@ -1,0 +1,68 @@
+AIRBNB NYC — BUSINESS INSIGHTS
+==============================
+
+1. LISTINGS ARE CONCENTRATED IN MANHATTAN AND BROOKLYN
+Manhattan has approximately 44K listings (42.69%), while Brooklyn has approximately 42K (40.8%). Together, they account for roughly 83.5% of the listings shown in the dashboard.
+
+Business insight:
+Airbnb listing supply in this dataset is heavily concentrated in Manhattan and Brooklyn. These boroughs are the largest markets by listing count, while Queens, the Bronx and Staten Island have smaller shares.
+
+2. THE BOROUGH WITH THE MOST LISTINGS DOES NOT HAVE THE HIGHEST AVERAGE PRICE
+Manhattan has the highest listing count, but the dashboard shows Queens with the highest average listing price, followed by the Bronx, Brooklyn, Staten Island and Manhattan.
+
+Business insight:
+Listing volume and average price do not follow the same pattern. A borough can have many listings without having the highest average price. Further analysis by room type and neighbourhood would help explain these differences.
+
+3. LISTINGS ARE CONCENTRATED IN A FEW NEIGHBOURHOODS
+The leading neighbourhoods shown include Bedford-Stuyvesant (7,899 listings), Williamsburg (7,733), Harlem (5,441), Bushwick (4,956), Hell's Kitchen (3,950), Upper West Side (3,843), Upper East Side (3,656), East Village (3,479) and Midtown (3,358).
+
+Business insight:
+Listing supply is not evenly distributed across NYC neighbourhoods. Bedford-Stuyvesant and Williamsburg stand out as the two largest neighbourhoods in the displayed results. The Top 10 table total of 47,566 represents only the neighbourhoods included in that visual, not all 102K listings.
+
+4. ENTIRE HOMES/APARTMENTS AND PRIVATE ROOMS DOMINATE THE LISTING MIX
+The dashboard shows approximately 53K Entire Home/Apartment listings and 46K Private Room listings. Shared Rooms account for around 2K listings, while Hotel Rooms represent a very small category.
+
+Business insight:
+Most listings in the dataset are either entire homes/apartments or private rooms. Shared and hotel rooms make up a much smaller part of the available listing supply.
+
+5. HOTEL ROOMS HAVE THE HIGHEST DISPLAYED AVERAGE LISTING PRICE
+The dashboard shows average prices of approximately $666 for Hotel Rooms, $635 for Shared Rooms, and $625 for both Entire Home/Apartment and Private Room listings.
+
+Business insight:
+Hotel Rooms have the highest displayed average listing price, followed by Shared Rooms. However, Hotel Rooms have very few listings compared with the other categories, so their average should be interpreted cautiously.
+
+6. HOTEL ROOMS HAVE THE HIGHEST AVERAGE AVAILABILITY
+The dashboard shows average availability of approximately 220 days for Hotel Rooms, 167 days for Shared Rooms, 134 days for Entire Home/Apartment and 130 days for Private Room listings.
+
+Business insight:
+Hotel Room listings have the highest average number of days marked available, while Private Room listings have the lowest among the four room types shown. Availability indicates days marked as available; it does not represent actual bookings or occupancy.
+
+7. ABOUT HALF OF HOSTS ARE MARKED AS VERIFIED
+The dashboard shows approximately 13K hosts and a Verified Host percentage of 49.80%.
+
+Business insight:
+Around half of the hosts are marked as verified according to the dashboard measure. Verification status provides a useful host-profile attribute for comparing listings, but it does not by itself measure guest satisfaction or host performance.
+
+8. LISTINGS ARE UNEVENLY DISTRIBUTED ACROSS HOSTS
+The Top 10 Hosts chart shows that some hosts manage considerably more listings than others. The displayed names include Michael, David, John, Alex and Sonder (NYC), along with an Unknown category.
+
+Business insight:
+A relatively small group of hosts appears to manage multiple listings and contribute a notable share of the listing supply. The Unknown category should be treated separately rather than as an identifiable host.
+
+9. AVERAGE REVIEW RATINGS VARY BY ROOM TYPE
+The dashboard's Average Review Rating by Room Type visual shows differences between room types. Hotel Room appears highest and Shared Room appears lowest in the displayed chart.
+
+Business insight:
+The displayed average review rating differs across room types. This pattern can be explored further alongside listing counts and neighbourhoods. The KPI should be labelled Average Review Rating if it is calculated from the review rate number field.
+
+10. AVERAGE PRICE DIFFERS ACROSS REVIEW-COUNT GROUPS
+The dashboard compares average listing price across review-count ranges.
+
+Business insight:
+This comparison can show whether listings in different review-count groups have different average prices. It describes an association only; it does not show that receiving more reviews causes a price change. Review ranges should be sorted numerically before drawing a final conclusion.
+
+OVERALL BUSINESS TAKEAWAY
+-------------------------
+The NYC Airbnb listings in this dataset are concentrated mainly in Manhattan and Brooklyn. Bedford-Stuyvesant and Williamsburg are prominent neighbourhoods by listing count. Entire homes/apartments and private rooms dominate the listing mix, while the dashboard shows differences in average price, availability and review ratings across room types. Host verification and host listing counts provide additional insight into the host landscape.
+
+These insights describe patterns in the listing data. They should not be interpreted as actual bookings, occupancy, host earnings or Airbnb revenue.
